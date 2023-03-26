@@ -11,4 +11,10 @@ public class HomeController {
         model.addAttribute("name", "Developer");
         return "home";
     }
+//    @GetMapping("welcome")
+    @GetMapping("/")
+    public String welcomePage(Model model){
+        model.addAttribute("data", "Welcome!");
+        return "welcome";
+    }
 }
